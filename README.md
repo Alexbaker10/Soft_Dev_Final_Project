@@ -60,9 +60,5 @@ The system follows the **Model-View-Controller (MVC)** architectural design patt
 * **Search & Filtering:** Sprint 3 will introduce the ability to search the library by title or author to easily find past reads.
 * **Post-Book Summaries & Ratings:** Future updates will allow users to mark a book as finished, provide a star rating, and write a final summary.
 
-## Deployed URLs
-* **Frontend (Live Application):** `[Insert Vercel URL here]`
-* **Backend API:** `[Insert Render URL here]`
-
 -----------------------------------------------------
 **Author:** Alex Baker
