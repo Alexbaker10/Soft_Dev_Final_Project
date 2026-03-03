@@ -2,6 +2,10 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const { users } = require('../models/db');
 
+//default admin account
+const defaultPassword = bcrypt.hashSync('password123', 10);
+users.push({ id: 1, username: 'admin', password: defaultPassword });
+
 const JWT_SECRET = 'super_secret_key_for_mvp';
 
 exports.register = async (req, res) => {
