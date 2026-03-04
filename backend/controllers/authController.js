@@ -8,6 +8,12 @@ users.push({ id: 1, username: 'alex', password: defaultPassword });
 
 const JWT_SECRET = 'super_secret_key_for_mvp';
 
+//default admin account
+if (!users.find(u => u.username === 'alex')) {
+    const defaultPassword = bcrypt.hashSync('alex', 10);
+    users.push({ id: 1, username: 'alex', password: defaultPassword });
+}
+
 exports.register = async (req, res) => {
     const { username, password } = req.body;
     const hashedPassword = await bcrypt.hash(password, 10);
